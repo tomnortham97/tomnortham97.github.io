@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #2b2002;
+    color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid rgb(117, 0, 0);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #2b2002;
+    padding: 10px 0;
+    border-bottom: 2px solid rgb(117, 0, 0);
+    text-align: center;
+}
+
+nav a {
+    color: #f3f3f3;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Full-height Section */
+section.full-height {
+    background-color: #afadaa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(117, 0, 0);
+    height: 100vh;
+    overflow: hidden;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Text Sections */
+.text-section {
+    background-color: #afadaa;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid rgb(117, 0, 0);
+}
+
+.text-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Address Section */
+.address-section {
+    background-color: #2b2002;
+    color: #f3f3f3;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(117, 0, 0);
+}
+
+.address-section div {
+    width: 45%;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.address-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2b2002;
+    color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid rgb(117, 0, 0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        padding: 10px;
+    }
+    .address-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .address-section div {
+        width: 100%;
+        text-align: center;
+    }
+}

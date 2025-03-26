@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024-QBC4SM@CFM-WEBSITE</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2b2002;
+            color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid rgb(117, 0, 0);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            background-color: #2b2002;
+            color: #f3f3f3;
+            padding: 20px 0;
+            border-bottom: 2px solid rgb(117, 0, 0);
+            position: fixed;
+            top: 120px; /* Adjust based on the height of the header */
+            width: 100%;
+            z-index: 999;
+			text-align: center;
+        }
+        nav a {
+            color: #f3f3f3;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        section.full-height {
+            background-color: #afadaa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid rgb(117, 0, 0);
+            height: 100vh;
+            overflow: hidden;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+			speed: 4000;
+        }
+        section img {
+            width: 100%; /* Ensure the image covers the full viewport width */
+            height: auto; /* Ensure the image covers the full viewport height */
+            object-fit: cover; /* Cover the entire section area */
+        }
+        .text-section {
+            background-color: #afadaa;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid rgb(117, 0, 0);
+        }
+        .address-section {
+            background-color: #2b2002;
+            color: #f3f3f3;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid rgb(117, 0, 0);
+        }
+        .address-section div {
+            width: 45%;
+        }
+        footer {
+            background-color: #2b2002;
+            color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid rgb(117, 0, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>QUANTUM BEAMS & COMPUTATION FOR SUSTAINABLE MATERIALS</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="People.html">TEAM</a>
+        <a href="Events.html">EVENTS</a>
+        <a href="Publication.html">PUBLICATIONS</a>
+        <a href="Jobs.html">JOBS</a>
+    </nav>    
+
+    <section class="full-height">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="Pictures/Team1.jpg" alt="Team Image"></div>
+                <div class="swiper-slide"><img src="Pictures/Team2.jpg" alt="Second Image"></div>
+                <div class="swiper-slide"><img src="Pictures/Team3.jpg" alt="Third Image"></div>
+                <!-- Add more slides as needed -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <div class="text-section">
+        <h2>LED BY</h2>
+        <p>PROF. DR. FELIX FERNANDEZ ALONSO & DR. PEDRO COTO BRANA</p>
+    </div>
+
+    <div class="text-section">
+        <h2>ABOUT US</h2>
+        <p>The Quantum Beams and Sustainable Materials group
+            makes extensive use of beams of quantum particles like
+            neutrons or photons in tandem with computational materials modelling to interrogate, understand, and design
+            novel functional materials for energy applications and
+            sustainability. This research program is underpinned by
+            the development of new techniques and methodologies.
+            for materials discovery, in close collaboration with leading neutron and X-ray laboratories from around the globe.
+            Current areas of focus include hybrid organic-inorganic
+            materials for photovoltaics & photonics, or carbon-based
+            nanostructured media for the storage of chemical and
+            thermal energy</p>
+    </div>
+
+    <div class="address-section">
+        <div>
+            <h2>CENTRO DE FÍSICA DE MATERIALES</h2>
+            <p>QUANTUM BEAMS & COMPUTATION FOR SUSTAINABLE MATERIALS</p>
+			<p>EMAIL: <span></span><a href="mailto:qbcsm.donostia@gmail.com">qbcsm.donostia@gmail.com</a></p>
+            <p>PHONE: (+34) 943 01 87 86</p>
+        </div>
+        <div>
+            <h2>ADDRESS</h2>
+            <p>Centro de Física de Materiales — Material Physics Center (CFM-MPC), CSIC-UPV/EHU</p>
+            <p>Paseo Manuel de Lardizabal, 5</p>
+            <p>Donostia – San Sebastián (Gipuzkoa)</p>
+            <p>Spain - 20018</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-QBSMCC@CFM-WEBSITE. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+			speed: 1500,
+			autoplay: {
+				delay: 10000,
+				disableOnInteraction: false,
+			},
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+			keyboard: {
+				enabled: true,
+				onlyInViewport: false
+			},
+			runCallbacksOnInit: true
+        });
+    </script>
+</body>
+</html>
+
+
